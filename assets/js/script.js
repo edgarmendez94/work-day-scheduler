@@ -1,5 +1,6 @@
-var saveButton = document.querySelectorAll(".btn btn-primary");
-var displayEventText = document.getElementById("#event-saved");
+var saveButton = document.querySelectorAll("#buttonSave");
+var displayEventText = document.querySelector("#event-saved");
+
 
 //  for grey class="table-secondary"
 // for red class="table-danger"
@@ -13,13 +14,12 @@ $("#currentDay").text(reformatDate);
 
 saveButton.addEventListener("click", function(event) {
     event.preventDefault();
+    // DISPLAY appointment added to local storage
+    displayEventText.classList.remove("hidden")
 
- // DISPLAY appointment added to local storage
+    // add text to local storage
+    var event = document.querySelectorAll("#textField").value;
+    localStorage.setItem("event", event);
 
 
-
-// add text to local storage
-
-
-
-})
+    });
