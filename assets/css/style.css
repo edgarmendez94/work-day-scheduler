@@ -91,3 +91,16 @@ resize: none;
 outline: none;
 
 }
+
+#event-saved{
+
+  padding: 0px;
+  margin: -22px;
+  text-align: center;
+}
+
+.hidden{
+
+  display: none;
+
+}
