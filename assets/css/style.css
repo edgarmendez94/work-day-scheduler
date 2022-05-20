@@ -80,3 +80,14 @@ textarea{
 
   width: 20px;
 }
+
+.textField{
+
+width: 1200px;
+height: 30px;
+border: none;
+background-color: transparent;
+resize: none;
+outline: none;
+
+}
